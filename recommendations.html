@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations & References | ReGen Fuge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">ReGen Fuge</div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="methodology.html">Methodology</a></li>
+                <li><a href="results.html">Results & Analysis</a></li>
+                <li><a href="recommendations.html">Recommendations & Citations</a></li>
+                <li><a href="about.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="container recommendations-page">
+
+    <!-- Recommendations Section -->
+    <section class="recommendations-section">
+        <h2>Future Recommendations</h2>
+
+        <p class="section-intro">
+            Although the project has reached its conclusion, several improvements
+            can be implemented to enhance performance, safety, and usability.
+            The following recommendations are proposed for future development.
+        </p>
+
+        <div class="recommendation-card">
+            <h3>Auto-Balancing System</h3>
+            <p>
+                Implement an auto-balancing system capable of detecting rotor imbalance
+                and excessive vibration. This system would automatically reduce speed
+                or stop operation before test tubes break or burst. An accelerometer
+                sensor such as the <strong>MPU6050</strong> can be used to detect vibration levels.
+            </p>
+        </div>
+
+        <div class="recommendation-card">
+            <h3>Dynamic Motor Cooling</h3>
+            <p>
+                Add a dynamic cooling system to monitor motor temperature and activate
+                cooling fans when overheating is detected. This can be achieved using
+                an <strong>NTC thermistor</strong> to ensure safe operating temperatures
+                and extend motor lifespan.
+            </p>
+        </div>
+
+        <div class="recommendation-card">
+            <h3>BLDC Motor Upgrade</h3>
+            <p>
+                Replace the universal motor with a <strong>Brushless DC (BLDC) motor</strong>,
+                which offers higher efficiency, lower heat generation, and more stable
+                rotation due to its electronically controlled, frictionless design.
+            </p>
+        </div>
+
+        <div class="recommendation-card">
+            <h3>Monitoring & Control System</h3>
+            <p>
+                Integrate a monitoring system using an <strong>Arduino or ESP32</strong>
+                microcontroller to display and transmit real-time operational data such
+                as rotational speed, temperature, and operating duration through a
+                simple application.
+            </p>
+        </div>
+
+        <div class="recommendation-card">
+            <h3>Safety Lid Mechanism</h3>
+            <p>
+                Add a transparent safety lid equipped with a <strong>safety interlock switch</strong>
+                that automatically stops the motor if the lid is not fully closed, ensuring
+                operator safety during high-speed operation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Literature Cited -->
+    <section class="references-section">
+        <h2>Literature Cited</h2>
+
+        <ol class="reference-list">
+            <li>
+                Bhupathi, M., & Devarapu, G. C. R. (2021).
+                <em>Mobilefuge: A low-cost, portable, open-source 3D-printed centrifuge
+                for SARS-CoV-2 detection.</em> medRxiv.
+            </li>
+
+            <li>
+                Dadi, M., & Yasir, M. (2022).
+                <em>Spectroscopy and spectrophotometry: Principles and applications
+                for colorimetric analysis.</em> IntechOpen.
+            </li>
+
+            <li>
+                El-Kader, S. (2023).
+                <em>Egyptian perspective of electronic waste.</em>
+                Research & Development in Material Science, 19.
+            </li>
+
+            <li>
+                Grace, O. (2022).
+                <em>A note on centrifuge and types of centrifuge.</em>
+                Journal of Chromatography & Separation Techniques, 13(2).
+            </li>
+
+            <li>
+                Jian, H. (2017).
+                <em>Design of angle detection system based on MPU6050.</em>
+                ICEMC Conference Proceedings.
+            </li>
+
+            <li>
+                Mostafa, T., & Sarhan, S. (2018).
+                <em>Economic feasibility study of e-waste recycling facilities in Egypt.</em>
+                Evergreen, 5.
+            </li>
+
+            <li>
+                Nayak, D. S., & Shivarudraswamy, R. (2021).
+                <em>Efficiency analysis of BLDC and universal motors.</em>
+                Journal of The Institution of Engineers (India): Series B, 103.
+            </li>
+
+            <li>
+                Sule, S. S., Petsiuk, A. L., & Pearce, J. M. (2019).
+                <em>Open-source completely 3D-printable centrifuge.</em>
+                Instruments, 3(2), 30.
+            </li>
+        </ol>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Team 30217 – ReGen Fuge Project</p>
+</footer>
+
+</body>
+</html>

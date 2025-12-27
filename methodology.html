@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methodology | ReGen Fuge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ReGen Fuge</div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="methodology.html">Methodology</a></li>
+                <li><a href="results.html">Results & Analysis</a></li>
+                <li><a href="recommendations.html">Recommendations & Citations</a></li>
+                <li><a href="about.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+    <h2>Engineering Component Inventory</h2>
+    <p>A detailed breakdown of the hardware architecture utilized in the ReGen Fuge prototype.</p>
+    
+    <div class="table-container">
+        <table class="academic-table">
+            <thead>
+                <tr>
+                    <th>Component</th>
+                    <th>Source & Status</th>
+                    <th>Technical Role</th>
+                    <th>Visual Reference</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="comp-name">Universal Motor</span><br>
+                        <span class="comp-sub">220V Series-Wound</span>
+                    </td>
+                    <td><span class="badge upcycled">Upcycled</span> From Kitchen Mixer</td>
+                    <td>Generates the high-torque rotational force required for sedimentation.</td>
+                    <td><img src="./images/motor (2).png" alt="Motor" class="table-thumb"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="comp-name">Potentiometer</span><br>    
+                        <span class="comp-sub">Variable Rheostat</span>
+                    </td>
+                    <td><span class="badge new">New</span> Low-Cost Component</td>
+                    <td>Modulates voltage to provide dual-speed control (High/Low).</td>
+                    <td><img src="./images/potentio.png" alt="Potentiometer" class="table-thumb"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="comp-name">3D-Printed Rotor</span><br>
+                        <span class="comp-sub">PLA+ Polymer</span>
+                    </td>
+                    <td><span class="badge custom">Custom</span> CAD Optimized</td>
+                    <td>Holds 6 test tubes at a 45° angle for optimal pellet concentration.</td>
+                    <td><img src="./images/rotor.png" alt="3D Print" class="table-thumb"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="comp-name">Housing Unit</span><br>
+                        <span class="comp-sub">Plywood & PET</span>
+                    </td>
+                    <td><span class="badge upcycled">Upcycled</span> Scrap Material</td>
+                    <td>Acts as a safety blast shield and provides structural damping.</td>
+                    <td><img src="./images/housing.png" alt="Housing" class="table-thumb"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+        <section id="design-logic">
+            <h2>Design Logic & Safety Protocols</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>1. Motor Restoration</h3>
+                    <p>Unlike the <em>Dremel Fuge</em>, which requires buying a specialized tool, we extracted series-wound motors from discarded appliances. By replacing the carbon brushes and cleaning the commutator, we achieved a 40% increase in efficiency compared to the "as-found" state of the e-waste.</p>
+                </div>
+                <div class="card">
+                    <h3>2. Structural Integrity</h3>
+                    <p>Safety is paramount in high-speed rotation. The frame is constructed from 12mm reclaimed plywood, reinforced with recycled plastic sheets to create a "Blast Shield." This prevents debris from escaping in the event of a test-tube fracture or rotor imbalance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="process">
+            <h2>Assembly Workflow</h2>
+            <div class="formula-box">
+                <p><strong>Step A:</strong> Disassembly of e-waste mixer and extraction of the motor and internal wiring.</p>
+                <p><strong>Step B:</strong> Integration of the Potentiometer and safety fuse for overload protection.</p>
+                <p><strong>Step C:</strong> CAD modeling and 3D printing of the rotor, specifically balanced to handle 10ml test tubes.</p>
+                <p><strong>Step D:</strong> Stress testing at 50%, 75%, and 100% power to calibrate RPM vs. G-Force.</p>
+            </div>
+        </section>
+
+
+    </main>
+
+    <main class="container">
+        <section id="test-plan">
+            <h2>System Test Plan & Validation</h2>
+            <p>The validation process involved three progressive trials to reach the operational target of 1650 RPM and 90% water purity.</p>
+            
+            <div class="media-container">
+    <div class="video-wrapper">
+        <video
+            class="test-video"
+            loop
+            muted
+            playsinline
+            preload="none"
+        >
+            <source src="./videos/tedx-presentation.mp4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="video-caption">
+            Test Plan Video
+        </p>
+    </div>
+</div>
+
+            </div>
+
+        </section>
+
+        <section id="calibration" class="calibration-section">
+            <h2>Scientific Calibration</h2>
+            <div class="grid">
+                <div class="card calibration-card">
+                    <h3>Accuracy Verification</h3>
+                    <p>Our prototype was calibrated against a <strong>Commercial Laboratory Centrifuge</strong> to establish a baseline. Using a Visible Spectrophotometer 721, we verified that our system maintains a 96% accuracy rate relative to industrial equipment.</p>
+                    <div class="formula-box">
+                        <code>Error % = |(Standard Value - Prototype Value) / Standard Value| × 100</code>
+                    </div>
+                </div>
+                <div class="media-box image">
+                    <img src="./images/spectro.png" alt="Calibration Setup" ">
+                </div>
+            </div>
+            
+            <div class="media-container">
+    <div class="media-box video" data-video="./videos/tedx-presentation.mp4.mp4">
+        <div class="placeholder-icon">▶</div>
+        <p>Calibration Video: Comparison with Commercial Unit</p>
+    </div>
+</div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Team 30217 - ReGen Fuge Project | Engineering Sustainability</p>
+    </footer>
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const video = document.querySelector(".test-video");
+
+    const observer = new IntersectionObserver(
+        ([entry]) => {
+            if (entry.isIntersecting) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        },
+        {
+            threshold: 0.5 // 50% of video must be visible
+        }
+    );
+
+    observer.observe(video);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const videoBoxes = document.querySelectorAll(".media-box.video");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const box = entry.target;
+            const video = box.querySelector("video");
+
+            if (!video) return;
+
+            if (entry.isIntersecting) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+    }, { threshold: 0.5 });
+
+    videoBoxes.forEach(box => {
+        box.addEventListener("click", () => {
+            if (box.querySelector("video")) return;
+
+            const src = box.dataset.video;
+
+            const video = document.createElement("video");
+            video.src = src;
+            video.muted = true;
+            video.loop = true;
+            video.playsInline = true;
+            video.autoplay = true;
+            video.style.width = "100%";
+            video.style.height = "100%";
+
+            box.innerHTML = "";
+            box.appendChild(video);
+
+            observer.observe(video);
+        });
+    });
+});
+</script>
+
+</body>
+</html>
