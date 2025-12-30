@@ -749,3 +749,128 @@ nav ul li a.active::after {
     width: 100%;
 }
 
+/* --- RESPONSIVE OVERRIDES --- */
+
+/* 1. Large Tablets & Small Laptops (up to 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* 2. Tablets & Large Phones (up to 768px) */
+@media (max-width: 768px) {
+    /* Header & Navigation */
+    nav {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    nav ul {
+        padding: 0;
+        margin-top: 15px;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Typography */
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Grids: Force to single column where necessary */
+    .grid, .team-grid, .resource-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Tables: Ensure horizontal scrolling on small screens */
+    .data-table, .academic-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Team Cards - Maintain image ratio on mobile */
+    .team-card img {
+        height: 220px;
+    }
+
+    /* Media Containers */
+    .media-container {
+        flex-direction: column;
+    }
+
+    .media-box {
+        min-height: 180px;
+    }
+}
+
+/* 3. Small Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .card, .academic-table td, .academic-table td:first-child {
+        padding: 15px;
+    }
+
+    /* Adjusting the dark sidebar of the academic table for tiny screens */
+    .academic-table td:first-child {
+        width: 40%; 
+        font-size: 0.85rem;
+    }
+
+    .formula-box {
+        font-size: 0.8rem;
+        padding: 15px;
+    }
+
+    /* Adjusting resource cards for one-tap utility */
+    .resource-card {
+        padding: 1.5rem;
+    }
+
+    footer {
+        padding: 30px 15px;
+    }
+}
+
+/* 4. Fix for High-Density Displays & Large Screens */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px; /* Expands content slightly on ultrawide monitors */
+    }
+}
+
+/* 5. Print Optimization */
+@media print {
+    header, footer, .social-icons {
+        display: none !important;
+    }
+    body {
+        background: white;
+        color: black;
+    }
+    .card, .academic-table td {
+        border: 1px solid #ddd;
+        break-inside: avoid;
+    }
+}
+
