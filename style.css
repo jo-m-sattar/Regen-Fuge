@@ -728,26 +728,6 @@ About Page
 .social-icons {
     padding-bottom: 1.5rem;
 }
-nav ul li a {
-    position: relative;
-    text-decoration: none;
-    padding-bottom: 6px;
-}
-
-nav ul li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 2px;
-    background-color: #0077b5; /* choose your color */
-    transition: width 0.3s ease;
-}
-
-nav ul li a.active::after {
-    width: 100%;
-}
 
 /* --- RESPONSIVE OVERRIDES --- */
 
@@ -874,3 +854,33 @@ nav ul li a.active::after {
     }
 }
 
+.proto{
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* This handles the side-by-side layout without affecting section margins */
+.hero-layout-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; /* Space between text and image */
+    width: 100%;
+    margin-left: -20px;
+}
+
+/* Ensures the text side doesn't get squeezed */
+.hero-text {
+    flex: 1;
+    text-align: left; /* Keeps text aligned left within the flex box */
+}
+
+/* Ensures the image side stays a consistent size */
+.proto {
+    flex: 0 0 auto;   /* Prevents the image from shrinking/growing weirdly */       /* Adjust this percentage to make image bigger or smaller */
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+}
